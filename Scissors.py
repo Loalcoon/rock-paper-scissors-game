@@ -42,5 +42,5 @@ while user != 'Q':
             user = input("Rock/Paper/Scissors or Q to Exit: ")
             continue
     elif user != 'Rock' or user != 'Paper' or user != 'Scissors':
-        print('Wrong Input')
-        break
+        print('Wrong Input, enter Rock/Paper/Scissors')
+        continue
