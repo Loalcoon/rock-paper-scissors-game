@@ -12,16 +12,15 @@ while True:
 
     if user not in options.values():
         print("Wrong input, please enter Rock/Paper/Scissors")
-        break
+        continue
 
     if user == options[pc]:
         print(f"Draw ; Computer Input: {options[pc]}")
-        break
+
     elif ((user == "Rock" and options[pc] == "Scissors")
           or (user == "Paper" and options[pc] == "Rock")
           or (user == "Scissors" and options[pc] == "Paper")):
         print (f"User Win ; Computer Input: {options[pc]}")
-        break
+
     else:
         print (f"Computer Win ; Input: {options[pc]}")
-        break
